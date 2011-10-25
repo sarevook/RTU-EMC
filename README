@@ -1,1 +1,40 @@
-Hola
+
+
+			==============
+			    pyTDMS			
+			==============
+			by Floris van Vugt
+			IMMM Hannover
+			January 2011
+
+
+
+INTRODUCTION
+
+pyTDMS is a light-weight, quick-and-dirty python library that can (mostly) read TDMS files. Not all data structures are implemented at this point, but reading measurement data stored as floats or ints should work seamlessly.
+
+
+USAGE
+
+Very simple. Example, in python:
+
+import pyTDMS
+(objects,rawdata) = pyTDMS.read("path/to/myfile.tdms")
+
+This will read the given tdms file. It returns two data structures:
+- objects: contains the metadata, in key-value pairs
+- rawdata: a dict containing the raw data associated with each of the channels in this TDMS file. 
+
+
+Mostly I think you will find it out by just trying it out on your favourite TDMS file and having a look at the data that the read procedure returns.
+
+
+
+
+NOT YET IMPLEMENTED
+
+What doesn't work yet is some of the data
+
+
+
+
